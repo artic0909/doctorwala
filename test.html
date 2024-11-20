@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Card Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .modal-body {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        #hiddenContent {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: black;
+        }
+
+        #scratchCanvas {
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch Scratch Card Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- Scratch Area -->
+                    <canvas id="scratchCanvas"></canvas>
+                    
+                    <!-- Hidden Code -->
+                    <div id="hiddenContent">
+                        <div>
+                            <h1>Coupon Code</h1>
+                            <h2 class="text-primary" style="font-weight: 900; font-size: 1.5rem;">Code: DW223</h2>
+                            <p class="fw-bold">Validity: 01/01/2024 - 31/12/2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const canvas = document.getElementById("scratchCanvas");
+            const hiddenContent = document.getElementById("hiddenContent");
+            const ctx = canvas.getContext("2d");
+
+            // Set up canvas dimensions to match modal body
+            const modalBody = document.querySelector(".modal-body");
+            canvas.width = modalBody.offsetWidth;
+            canvas.height = modalBody.offsetHeight;
+
+            // Fill the canvas with a solid gray color
+            ctx.fillStyle = "#cccccc";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Set up scratch logic
+            let isScratching = false;
+
+            const scratch = (x, y) => {
+                ctx.beginPath();
+                ctx.arc(x, y, 20, 0, Math.PI * 2); // Scratch circle
+                ctx.fill();
+            };
+
+            const getCoords = (e) => {
+                const rect = canvas.getBoundingClientRect();
+                const x = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+                const y = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+                return { x, y };
+            };
+
+            const checkScratchCompletion = () => {
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                let totalPixels = 0;
+                let scratchedPixels = 0;
+
+                for (let i = 0; i < imageData.data.length; i += 4) {
+                    totalPixels++;
+                    if (imageData.data[i + 3] === 0) scratchedPixels++;
+                }
+
+                return scratchedPixels / totalPixels > 0.5; // Check if more than 50% is scratched
+            };
+
+            const revealContent = () => {
+                hiddenContent.style.opacity = 1; // Make hidden content visible
+                canvas.style.pointerEvents = "none"; // Disable further scratching
+            };
+
+            const startScratch = (e) => {
+                isScratching = true;
+                const { x, y } = getCoords(e);
+                scratch(x, y);
+            };
+
+            const continueScratch = (e) => {
+                if (!isScratching) return;
+                const { x, y } = getCoords(e);
+                scratch(x, y);
+                if (checkScratchCompletion()) revealContent();
+            };
+
+            const stopScratch = () => {
+                isScratching = false;
+            };
+
+            // Event listeners for scratching
+            canvas.addEventListener("mousedown", startScratch);
+            canvas.addEventListener("mousemove", continueScratch);
+            canvas.addEventListener("mouseup", stopScratch);
+            canvas.addEventListener("mouseleave", stopScratch);
+
+            canvas.addEventListener("touchstart", startScratch);
+            canvas.addEventListener("touchmove", continueScratch);
+            canvas.addEventListener("touchend", stopScratch);
+        });
+    </script>
+</body>
+</html>
