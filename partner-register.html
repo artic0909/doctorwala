@@ -493,14 +493,15 @@
 
 
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0"
-                                        placeholder="Your Captcha" style="height: 55px;">
+                                    <div class="cap-back"  style="background: url('img/captcha.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; border-radius: 2px;">
+                                        <canvas id="partnerRegisterCaptchaCanvas" width="150" height="49" style="cursor: pointer;"></canvas>
+                                    </div>
                                 </div>
 
 
                                 <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control bg-light border-0"
-                                        placeholder="Enter Captcha *" style="height: 55px;">
+                                        placeholder="Enter Captcha *" style="height: 55px;" id="partnerRegisterCaptchaInput" name="partnerRegisterCaptchaInput">
                                 </div>
 
 
@@ -552,6 +553,18 @@
         </div>
     </div>
     <!-- Partner Register End -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -750,7 +763,7 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/cards-scroll.js"></script>
-    <script src="js/captcha.js"></script>
+    <script src="js/partner-register-captcha.js"></script>
 </body>
 
 </html>
