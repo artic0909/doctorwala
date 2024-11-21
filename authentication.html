@@ -325,6 +325,11 @@
 
         @media only screen and (max-width: 425px) {
 
+
+            .container.sign-in{
+                margin-top: -30px;
+            }
+
             .container::before,
             .container.sign-in::before,
             .container.sign-up::before {
@@ -337,8 +342,8 @@
             }
 
             /* .container.sign-in .col.sign-up {
-        transform: translateY(100%);
-    } */
+                transform: translateY(100%);
+            } */
 
             .container.sign-in .col.sign-in,
             .container.sign-up .col.sign-up {
@@ -379,6 +384,7 @@
 
             .text {
                 margin: 0;
+                margin-top: 20px;
             }
 
             .text p {
@@ -387,12 +393,17 @@
 
             .text h2 {
                 margin: 0.5rem;
-                font-size: 1.3rem;
+                font-size: 1.9rem;
             }
 
-            .sig-text{
+            .sig-text {
                 opacity: 0;
             }
+
+            .login-form{
+                
+            }
+
         }
     </style>
 </head>
@@ -427,7 +438,7 @@
 
 
             <!-- SIGN UP -->
-            <div class="col align-items-center flex-col sign-up" style="margin-top: -10px;">
+            <div class="col align-items-center flex-col sign-up signup-form" style="margin-top: -10px;">
                 <div class="form-wrapper align-items-center">
                     <form class="form sign-up">
                         <h1 style="color: #1896e4; font-weight: 900;"><span
@@ -518,7 +529,7 @@
             <!-- Login -->
             <div class="col align-items-center flex-col sign-in">
                 <div class="form-wrapper align-items-center">
-                    <form class="form sign-in">
+                    <form class="form sign-in login-form">
                         <h1 style="color: #1896e4; font-weight: 900;"><span
                                 style="color: red; font-weight: 1000;">+</span> HELLO USER <span
                                 style="color: red; font-weight: 1000;">+</span></h1>
@@ -591,9 +602,6 @@
                     </h2>
 
                 </div>
-                <div class="img sign-in">
-
-                </div>
             </div>
             <!-- END Login CONTENT -->
 
@@ -602,9 +610,6 @@
 
             <!-- SIGN UP CONTENT -->
             <div class="col align-items-center flex-col sig-text">
-                <div class="img sign-up">
-
-                </div>
                 <div class="text sign-up">
                     <h2>
                         Join us!
