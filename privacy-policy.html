@@ -123,10 +123,153 @@
             <!-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
                     class="fa fa-search"></i></button> -->
             <a href="authentication.html" class="btn btn-primary py-2 px-4 ms-3">Login</a>
-            <!-- <a href="profile-view.html" class="btn btn-primary ms-3"><i class="fa fa-user" aria-hidden="true"></i></a> -->
+            <!-- <a href="" data-bs-toggle="modal" data-bs-target="#userProfileModal" class="btn btn-primary ms-3"><i class="fa fa-user" aria-hidden="true"></i></a> -->
         </div>
     </nav>
     <!-- Navbar End -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- User Profile & Password Edit Modal -->
+    <div class="modal fade" id="userProfileModal" tabindex="-1" aria-labelledby="userProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+                    <!-- profile update form -->
+                    <form class="text-center">
+                        <h4 class="modal-title" id="userProfileModalLabel">User Profile</h4>
+                        <p class="mb-4">Update your profile details</p>
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="user_name" name="user_name"
+                                        value="Saklin Mustak">
+                                    <label for="user_name">Name</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="user_email" name="user_email"
+                                        value="saklin@gmail.com">
+                                    <label for="user_email">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="user_mobile" name="user_mobile"
+                                        value="9061234567">
+                                    <label for="user_mobile">Mobile</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <a href="" class="btn btn-primary py-3 col-md-12">Update Profile</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+
+                    <!-- password update form -->
+                    <form class="text-center form password-update">
+                        <h4 class="modal-title" id="userProfileModalLabel">Security Privacy</h4>
+                        <p class="mb-4">Update your account password</p>
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="user_old_password"
+                                        name="user_old_password" placeholder="Existing Password">
+                                    <label for="user_old_password">Existing Password</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="user_new_password"
+                                        name="user_new_password" placeholder="New Password">
+                                    <label for="user_new_password">New Password</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <canvas id="passwordUpdateCaptchaCanvas" width="150" height="40"></canvas>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="passwordUpdateCaptchaInput"
+                                        name="passwordUpdateCaptchaInput" placeholder="Captcha">
+                                    <label for="passwordUpdateCaptchaInput">Captcha</label>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <button type="submit" class="btn btn-primary py-3 col-md-12">Save Changes</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,9 +321,14 @@
                         <div class="d-flex align-items-center mb-2 wow slideInUp" data-wow-delay="0.3s">
                             <div class="text-start">
                                 <h5 class="mb-0">Information We Collect</h5>
-                                <span>1.1 Personal Information: We may collect personal information such as your name, email address, contact number, and other relevant information when you voluntarily provide it to us through forms or by contacting us.</span> <br> <br>
+                                <span>1.1 Personal Information: We may collect personal information such as your name,
+                                    email address, contact number, and other relevant information when you voluntarily
+                                    provide it to us through forms or by contacting us.</span> <br> <br>
 
-                                <p>1.2 Usage Data: We may collect non-personal information about your interaction with our Website, such as your IP address, browser type, referring/exit pages, and the date and time of your visit. We may use cookies and similar technologies to collect this information.</p>
+                                <p>1.2 Usage Data: We may collect non-personal information about your interaction with
+                                    our Website, such as your IP address, browser type, referring/exit pages, and the
+                                    date and time of your visit. We may use cookies and similar technologies to collect
+                                    this information.</p>
                             </div>
                         </div>
 
@@ -190,12 +338,18 @@
                         <div class="d-flex align-items-center wow slideInUp" data-wow-delay="0.3s">
                             <div class="text-start">
                                 <h5 class="mb-0">Use of Information</h5>
-                                <span>2.1 Provide Services: We may use the personal information you provide to us to provide and improve our services, such as facilitating appointments with doctors, displaying relevant search results, and delivering personalized content.</span>
+                                <span>2.1 Provide Services: We may use the personal information you provide to us to
+                                    provide and improve our services, such as facilitating appointments with doctors,
+                                    displaying relevant search results, and delivering personalized content.</span>
                                 <br>
                                 <br>
-                                <p>2.2 Communication: We may use your contact information to communicate with you regarding your inquiries, appointments, service updates, and promotional offers. You may opt out of receiving promotional communications at any time.</p>
-                                
-                                <p>2.3 Analytics and Improvements: We may use the non-personal information and usage data to analyze trends, administer the Website, and improve our services, features, and user experience.</p>
+                                <p>2.2 Communication: We may use your contact information to communicate with you
+                                    regarding your inquiries, appointments, service updates, and promotional offers. You
+                                    may opt out of receiving promotional communications at any time.</p>
+
+                                <p>2.3 Analytics and Improvements: We may use the non-personal information and usage
+                                    data to analyze trends, administer the Website, and improve our services, features,
+                                    and user experience.</p>
                             </div>
                         </div>
 
@@ -206,7 +360,10 @@
                                 <h5 class="mb-0">Data Security</h5>
 
                                 <span>
-                                    We take reasonable precautions to protect the personal information we collect from unauthorized access, use, disclosure, or alteration. However, no method of transmission over the internet or electronic storage is completely secure. Therefore, we cannot guarantee absolute security of your personal information.
+                                    We take reasonable precautions to protect the personal information we collect from
+                                    unauthorized access, use, disclosure, or alteration. However, no method of
+                                    transmission over the internet or electronic storage is completely secure.
+                                    Therefore, we cannot guarantee absolute security of your personal information.
                                 </span>
                             </div>
                         </div>
@@ -219,7 +376,10 @@
                                 <h5 class="mb-0">Links to Third-Party Websites</h5>
 
                                 <span>
-                                    Our Website may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party websites. We recommend reviewing the privacy policies of those websites for information about their data collection, use, and disclosure practices.
+                                    Our Website may contain links to third-party websites or services. This Privacy
+                                    Policy does not apply to those third-party websites. We recommend reviewing the
+                                    privacy policies of those websites for information about their data collection, use,
+                                    and disclosure practices.
                                 </span>
                             </div>
                         </div>
@@ -233,7 +393,10 @@
                                 <h5 class="mb-0">Children's Privacy</h5>
 
                                 <span>
-                                    Our Website is not intended for children under the age of 13. We do not knowingly collect personal information from children under the age of 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us, and we will promptly remove the information.
+                                    Our Website is not intended for children under the age of 13. We do not knowingly
+                                    collect personal information from children under the age of 13. If you are a parent
+                                    or guardian and believe that your child has provided us with personal information,
+                                    please contact us, and we will promptly remove the information.
                                 </span>
                             </div>
                         </div>
@@ -246,7 +409,9 @@
                                 <h5 class="mb-0">Changes to this Privacy Policy</h5>
 
                                 <span>
-                                    We reserve the right to update or modify this Privacy Policy at any time. Any changes will be effective immediately upon posting the updated Privacy Policy on our Website. We encourage you to review this Privacy Policy periodically.
+                                    We reserve the right to update or modify this Privacy Policy at any time. Any
+                                    changes will be effective immediately upon posting the updated Privacy Policy on our
+                                    Website. We encourage you to review this Privacy Policy periodically.
                                 </span>
                             </div>
                         </div>
@@ -259,7 +424,8 @@
                                 <h5 class="mb-0">Contact Us</h5>
 
                                 <span>
-                                    If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us at <strong>admin@doctorwala.info</strong>
+                                    If you have any questions, concerns, or requests regarding this Privacy Policy or
+                                    our privacy practices, please contact us at <strong>admin@doctorwala.info</strong>
                                 </span>
                             </div>
                         </div>

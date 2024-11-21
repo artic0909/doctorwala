@@ -123,10 +123,154 @@
             <!-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
                     class="fa fa-search"></i></button> -->
             <a href="authentication.html" class="btn btn-primary py-2 px-4 ms-3">Login</a>
-            <!-- <a href="profile-view.html" class="btn btn-primary ms-3"><i class="fa fa-user" aria-hidden="true"></i></a> -->
+            <!-- <a href="" data-bs-toggle="modal" data-bs-target="#userProfileModal" class="btn btn-primary ms-3"><i class="fa fa-user" aria-hidden="true"></i></a> -->
         </div>
     </nav>
     <!-- Navbar End -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- User Profile & Password Edit Modal -->
+    <div class="modal fade" id="userProfileModal" tabindex="-1" aria-labelledby="userProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+                    <!-- profile update form -->
+                    <form class="text-center">
+                        <h4 class="modal-title" id="userProfileModalLabel">User Profile</h4>
+                        <p class="mb-4">Update your profile details</p>
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="user_name" name="user_name"
+                                        value="Saklin Mustak">
+                                    <label for="user_name">Name</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="user_email" name="user_email"
+                                        value="saklin@gmail.com">
+                                    <label for="user_email">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="user_mobile" name="user_mobile"
+                                        value="9061234567">
+                                    <label for="user_mobile">Mobile</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <a href="" class="btn btn-primary py-3 col-md-12">Update Profile</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+
+                    <!-- password update form -->
+                    <form class="text-center form password-update">
+                        <h4 class="modal-title" id="userProfileModalLabel">Security Privacy</h4>
+                        <p class="mb-4">Update your account password</p>
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="user_old_password"
+                                        name="user_old_password" placeholder="Existing Password">
+                                    <label for="user_old_password">Existing Password</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="user_new_password"
+                                        name="user_new_password" placeholder="New Password">
+                                    <label for="user_new_password">New Password</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <canvas id="passwordUpdateCaptchaCanvas" width="150" height="40"></canvas>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="passwordUpdateCaptchaInput"
+                                        name="passwordUpdateCaptchaInput" placeholder="Captcha">
+                                    <label for="passwordUpdateCaptchaInput">Captcha</label>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <button type="submit" class="btn btn-primary py-3 col-md-12">Save Changes</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

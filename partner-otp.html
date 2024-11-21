@@ -123,10 +123,155 @@
             <!-- <button type="button" class="btn text-dark" data-bs-toggle="modal" data-bs-target="#searchModal"><i
                     class="fa fa-search"></i></button> -->
             <a href="authentication.html" class="btn btn-primary py-2 px-4 ms-3">Login</a>
-            <!-- <a href="profile-view.html" class="btn btn-primary ms-3"><i class="fa fa-user" aria-hidden="true"></i></a> -->
+            <!-- <a href="" data-bs-toggle="modal" data-bs-target="#userProfileModal" class="btn btn-primary ms-3"><i class="fa fa-user" aria-hidden="true"></i></a> -->
         </div>
     </nav>
     <!-- Navbar End -->
+
+
+
+
+
+
+
+
+
+
+    <!-- User Profile & Password Edit Modal -->
+    <div class="modal fade" id="userProfileModal" tabindex="-1" aria-labelledby="userProfileModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+
+                    <!-- profile update form -->
+                    <form class="text-center">
+                        <h4 class="modal-title" id="userProfileModalLabel">User Profile</h4>
+                        <p class="mb-4">Update your profile details</p>
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="user_name" name="user_name"
+                                        value="Saklin Mustak">
+                                    <label for="user_name">Name</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="user_email" name="user_email"
+                                        value="saklin@gmail.com">
+                                    <label for="user_email">Email</label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="user_mobile" name="user_mobile"
+                                        value="9061234567">
+                                    <label for="user_mobile">Mobile</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <a href="" class="btn btn-primary py-3 col-md-12">Update Profile</a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+
+                    <!-- password update form -->
+                    <form class="text-center form password-update">
+                        <h4 class="modal-title" id="userProfileModalLabel">Security Privacy</h4>
+                        <p class="mb-4">Update your account password</p>
+                        <div class="row">
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="user_old_password"
+                                        name="user_old_password" placeholder="Existing Password">
+                                    <label for="user_old_password">Existing Password</label>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="user_new_password"
+                                        name="user_new_password" placeholder="New Password">
+                                    <label for="user_new_password">New Password</label>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <canvas id="passwordUpdateCaptchaCanvas" width="150" height="40"></canvas>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="passwordUpdateCaptchaInput"
+                                        name="passwordUpdateCaptchaInput" placeholder="Captcha">
+                                    <label for="passwordUpdateCaptchaInput">Captcha</label>
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="col-md-12">
+                                <div class="form-floating mb-3">
+                                    <button type="submit" class="btn btn-primary py-3 col-md-12">Save Changes</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </form>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -186,21 +331,23 @@
 
                                 <div class="col-12">
                                     <input type="email" class="form-control bg-light border-0"
-                                        placeholder="Enter Registered Email *" style="height: 55px;"
-                                        name="email" id="email">
+                                        placeholder="Enter Registered Email *" style="height: 55px;" name="email"
+                                        id="email">
                                 </div>
 
 
 
 
                                 <div class="col-12">
-                                    <input type="password" class="form-control bg-light border-0" placeholder="Enter Password *"
-                                        style="height: 55px;" name="password" id="password">
+                                    <input type="password" class="form-control bg-light border-0"
+                                        placeholder="Enter Password *" style="height: 55px;" name="password"
+                                        id="password">
                                 </div>
 
 
                                 <div class="col-12">
-                                    <a href="partner-dashboard.html" class="btn btn-dark w-100 py-3" type="submit">LOGIN</a>
+                                    <a href="partner-dashboard.html" class="btn btn-dark w-100 py-3"
+                                        type="submit">LOGIN</a>
                                 </div>
 
 
@@ -214,7 +361,8 @@
                                 </p>
 
                                 <p>
-                                    <a href="#" class="text-white fw-bold" style="text-decoration: none;">Already have an account ?</a>
+                                    <a href="#" class="text-white fw-bold" style="text-decoration: none;">Already have
+                                        an account ?</a>
                                     <span><a href="partner-login.html" class="text-white "
                                             style="text-decoration: underline;">Login</a></span>
                                 </p>
@@ -248,7 +396,8 @@
                         <div class="testimonial-item text-center text-white">
                             <img class="img-fluid mx-auto rounded mb-4 testi-logo" src="img/testilogo.png" alt="">
 
-                            <p class="testi-text" style="color: white; opacity: 1; font-weight: 700; font-size: 1.3rem;">
+                            <p class="testi-text"
+                                style="color: white; opacity: 1; font-weight: 700; font-size: 1.3rem;">
 
                                 <i class="fa-solid fa-2x fa-quote-left"></i>&nbsp;Dolores sed duo clita justo
                                 dolor et stet
@@ -263,7 +412,8 @@
                         <div class="testimonial-item text-center text-white">
                             <img class="img-fluid mx-auto rounded mb-4 testi-logo" src="img/testilogo.png" alt="">
 
-                            <p class="testi-text" style="color: white; opacity: 1; font-weight: 700; font-size: 1.3rem;">
+                            <p class="testi-text"
+                                style="color: white; opacity: 1; font-weight: 700; font-size: 1.3rem;">
 
                                 <i class="fa-solid fa-2x fa-quote-left"></i>&nbsp;Dolores sed duo clita justo
                                 dolor et stet
@@ -278,7 +428,7 @@
 
 
 
-                        
+
 
 
 

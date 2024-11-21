@@ -8,6 +8,7 @@ const loginCaptchaCanvas = document.getElementById('loginCaptchaCanvas');
 const loginCaptchaInput = document.getElementById('loginCaptchaInput');
 const loginContext = loginCaptchaCanvas.getContext('2d');
 
+
 // Function to generate CAPTCHA
 function generateCaptcha() {
     const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
