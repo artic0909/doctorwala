@@ -10,7 +10,7 @@ const partnerRegisterCaptchaCanvas = document.getElementById(
   // Function to generate a random CAPTCHA
   function generateCaptcha() {
     const chars =
-      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+      "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz0123456789";
     return Array.from(
       { length: 6 },
       () => chars[Math.floor(Math.random() * chars.length)]
