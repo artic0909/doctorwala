@@ -329,3 +329,8 @@ h6,
 
 
 
+.footer-content-inner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }

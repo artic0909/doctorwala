@@ -37,6 +37,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/cards-css.css" rel="stylesheet">
     <link href="css/partner-btn.css" rel="stylesheet">
+    <link href="responsive/index_responsive.css" rel="stylesheet">
+
 
 </head>
 
@@ -95,7 +97,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand p-0">
             <!-- <h1 class="m-0 text-primary"><i class="fa fa-tooth me-2"></i>DentCare</h1> -->
-            <img class="m-0" src="img/logo3.png" width="300" alt="DoctorWala">
+            <img class="m-0 nav-bar-logo" src="img/logo3.png" width="300" alt="DoctorWala">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -244,9 +246,9 @@
 
 
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testilogo.png" alt="">
+                            <img class="img-fluid mx-auto rounded mb-4 testi-logo" src="img/testilogo.png" alt="">
 
-                            <p class="fs-5" style="color: white; opacity: 1; font-weight: 700;">
+                            <p class="testi-text" style="color: white; opacity: 1; font-weight: 700; font-size: 1.3rem;">
 
                                 <i class="fa-solid fa-2x fa-quote-left"></i>&nbsp;Dolores sed duo clita justo
                                 dolor et stet
@@ -255,16 +257,13 @@
                                 <i class="fa-solid fa-2x fa-quote-right"></i>
                             </p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
+                            <h4 class="text-white mb-0 testi-text">Client Name</h4>
                         </div>
-
-
-
 
                         <div class="testimonial-item text-center text-white">
-                            <img class="img-fluid mx-auto rounded mb-4" src="img/testilogo.png" alt="">
+                            <img class="img-fluid mx-auto rounded mb-4 testi-logo" src="img/testilogo.png" alt="">
 
-                            <p class="fs-5" style="color: white; opacity: 1; font-weight: 700;">
+                            <p class="testi-text" style="color: white; opacity: 1; font-weight: 700; font-size: 1.3rem;">
 
                                 <i class="fa-solid fa-2x fa-quote-left"></i>&nbsp;Dolores sed duo clita justo
                                 dolor et stet
@@ -273,9 +272,13 @@
                                 <i class="fa-solid fa-2x fa-quote-right"></i>
                             </p>
                             <hr class="mx-auto w-25">
-                            <h4 class="text-white mb-0">Client Name</h4>
+                            <h4 class="text-white mb-0 testi-text">Client Name</h4>
                         </div>
 
+
+
+
+                        
 
 
 
@@ -331,13 +334,15 @@
     <!-- Footer Start -->
     <div class="container-fluid text-light py-4 footer-content"
         style="background: #051225; position: relative; z-index: 1001;">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
+        <div class="">
+            <div class="footer-content-inner">
+
+                <div class="text-center text-md-start">
                     <p class="mb-md-0">&copy; <a class="text-white border-bottom"
                             href="doctorwala.info">DoctorWala.info</a>. All
                         Rights Reserved.</p>
                 </div>
+
                 <!-- <div class="col-md-6 text-center text-md-end">
                     <p class="mb-0">Designed by <a class="text-white border-bottom" href="https://htmlcodex.com">HTML
                             Codex</a><br>
@@ -345,21 +350,21 @@
                     </p>
                 </div> -->
 
-                <div class="col-lg-3 col-md-6">
+                <div class="">
                     <div class="d-flex">
-                        <a class="btn btn-lg btn-dark btn-lg-square rounded me-2" href="#"><i
+                        <a class="btn btn-lg btn-dark btn-lg-square rounded me-2 btn-footer" href="#"><i
                                 class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-dark btn-lg-square rounded me-2" href="#"><i
+                        <a class="btn btn-lg btn-dark btn-lg-square rounded me-2 btn-footer" href="#"><i
                                 class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-dark btn-lg-square rounded me-2" href="#"><i
+                        <a class="btn btn-lg btn-dark btn-lg-square rounded me-2 btn-footer" href="#"><i
                                 class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-dark btn-lg-square rounded" href="#"><i
+                        <a class="btn btn-lg btn-dark btn-lg-square rounded btn-footer" href="#"><i
                                 class="fab fa-instagram fw-normal"></i></a>
                     </div>
                 </div>
 
 
-                <div class="col-lg-3 col-md-6">
+                <div class="login-partner">
                     <a href="partner-login.html" class="btn btn-dark btn-lg rounded me-2">Login As Partner</a>
                 </div>
 
