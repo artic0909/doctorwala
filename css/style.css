@@ -334,13 +334,11 @@ h6,
   align-items: center;
 }
 
-
-
-.my-dd:hover{
-    h5{
-        color: var(--primary) !important;
-    }
-    .ppp{
-        color: var(--dark) !important;
-    }
+.my-dd:hover {
+  h5 {
+    color: var(--primary) !important;
+  }
+  .ppp {
+    color: var(--dark) !important;
+  }
 }

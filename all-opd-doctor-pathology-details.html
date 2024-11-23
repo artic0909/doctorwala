@@ -43,6 +43,19 @@
     <link href="responsive/allopdpathdoc_responsive.css" rel="stylesheet">
 
 
+    <style>
+        .btn-primaryy {
+            background: linear-gradient(135deg, #3bc7fe, #006eff);
+            color: white;
+            border: none;
+            transition: all 100ms ease-in;
+
+            &:hover {
+                color: white;
+                scale: 1.05;
+            }
+        }
+    </style>
 
 </head>
 
@@ -111,7 +124,7 @@
                 <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Services</a>
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Search</a>
                     <div class="dropdown-menu m-0">
                         <a href="opd.html" class="dropdown-item">OPD Details</a>
                         <a href="doctor.html" class="dropdown-item">Doctor Details</a>
@@ -430,10 +443,10 @@
 
 
                         <div class="d-buttons">
-                            <a href="contact.html"
+                            <a href="" data-bs-toggle="modal" data-bs-target="#myInquirySendModal"
                                 class="btn btn-dark btn-darkk py-md-3 px-md-5 me-3 animated slideInLeft">Send
                                 Inquiry</a>
-                            <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">See
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">See
                                 Location</a>
                         </div>
 
@@ -566,7 +579,8 @@
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Details</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myOPDViewModal"
+                                            class="btn btn-primaryy w-100">View Details</a>
                                     </div>
                                 </div>
 
@@ -608,50 +622,8 @@
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Details</button>
-                                    </div>
-                                </div>
-
-
-
-
-
-                                <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
-                                    <div class="pricing-deco">
-                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
-                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
-                                            width="300px" x="0px" xml:space="preserve" y="0px">
-                                            <path class="deco-layer deco-layer--1"
-                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--2"
-                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--3"
-                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
-                                                fill="#FFFFFF" opacity="0.7"></path>
-                                            <path class="deco-layer deco-layer--4"
-                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
-                                                fill="#FFFFFF"></path>
-                                        </svg>
-
-
-                                        <div class="pricing-price">
-                                            <img src="img/doctor.png" width="80" alt=""
-                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
-                                        </div>
-                                        <h3 class="pricing-title">Dr. Doctor Name</h3>
-                                    </div>
-                                    <p>
-                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
-                                        <li class="list-group-item"><strong>Designation : MBBS</strong></li>
-                                        <li class="list-group-item"><strong>Specialist : Phychologist</strong></li>
-                                        <li class="list-group-item"><strong>Fees : ₹ 900</strong></li>
-                                    </ul>
-                                    </p>
-                                    <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Details</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myOPDViewModal"
+                                            class="btn btn-primaryy w-100">View Details</a>
                                     </div>
                                 </div>
 
@@ -694,7 +666,52 @@
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Details</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myOPDViewModal"
+                                            class="btn btn-primaryy w-100">View Details</a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="pricing-item features-item ja-animate mx-4"
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
+                                    <div class="pricing-deco">
+                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
+                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
+                                            width="300px" x="0px" xml:space="preserve" y="0px">
+                                            <path class="deco-layer deco-layer--1"
+                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--2"
+                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--3"
+                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                                                fill="#FFFFFF" opacity="0.7"></path>
+                                            <path class="deco-layer deco-layer--4"
+                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                                                fill="#FFFFFF"></path>
+                                        </svg>
+
+
+                                        <div class="pricing-price">
+                                            <img src="img/doctor.png" width="80" alt=""
+                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
+                                        </div>
+                                        <h3 class="pricing-title">Dr. Doctor Name</h3>
+                                    </div>
+                                    <p>
+                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
+                                        <li class="list-group-item"><strong>Designation : MBBS</strong></li>
+                                        <li class="list-group-item"><strong>Specialist : Phychologist</strong></li>
+                                        <li class="list-group-item"><strong>Fees : ₹ 900</strong></li>
+                                    </ul>
+                                    </p>
+                                    <div class="p-4">
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myOPDViewModal"
+                                            class="btn btn-primaryy w-100">View Details</a>
                                     </div>
                                 </div>
 
@@ -738,7 +755,8 @@
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Details</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myOPDViewModal"
+                                            class="btn btn-primaryy w-100">View Details</a>
                                     </div>
                                 </div>
 
@@ -780,7 +798,8 @@
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Details</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myOPDViewModal"
+                                            class="btn btn-primaryy w-100">View Details</a>
                                     </div>
                                 </div>
 
@@ -827,7 +846,7 @@
 
 
                                 <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 297px;">
                                     <div class="pricing-deco">
                                         <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
                                             id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
@@ -857,14 +876,56 @@
                                     <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
                                         <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
                                                 Type : Blood Test</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Time :
-                                                12:00 - 1:00</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Price :
-                                                ₹ 1900</strong></li>
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Clinic
+                                                Name : Clinic XYZ</strong></li>
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Days</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myPathologyViewModal"
+                                            class="btn btn-primaryy w-100">View Days</a>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="pricing-item features-item ja-animate mx-4"
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 297px;">
+                                    <div class="pricing-deco">
+                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
+                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
+                                            width="300px" x="0px" xml:space="preserve" y="0px">
+                                            <path class="deco-layer deco-layer--1"
+                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--2"
+                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--3"
+                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                                                fill="#FFFFFF" opacity="0.7"></path>
+                                            <path class="deco-layer deco-layer--4"
+                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                                                fill="#FFFFFF"></path>
+                                        </svg>
+
+
+                                        <div class="pricing-price">
+                                            <img src="img/path.png" width="80" alt=""
+                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
+                                        </div>
+                                        <h3 class="pricing-title">Test Name</h3>
+                                    </div>
+                                    <p>
+                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
+                                                Type : Blood Test</strong></li>
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Clinic
+                                                Name : Clinic XYZ</strong></li>
+                                    </ul>
+                                    </p>
+                                    <div class="p-4">
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myPathologyViewModal"
+                                            class="btn btn-primaryy w-100">View Days</a>
                                     </div>
                                 </div>
 
@@ -873,7 +934,7 @@
 
 
                                 <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 297px;">
                                     <div class="pricing-deco">
                                         <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
                                             id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
@@ -903,14 +964,103 @@
                                     <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
                                         <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
                                                 Type : Blood Test</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Time :
-                                                12:00 - 1:00</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Price :
-                                                ₹ 1900</strong></li>
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Clinic
+                                                Name : Clinic XYZ</strong></li>
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Days</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myPathologyViewModal"
+                                            class="btn btn-primaryy w-100">View Days</a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="pricing-item features-item ja-animate mx-4"
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 297px;">
+                                    <div class="pricing-deco">
+                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
+                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
+                                            width="300px" x="0px" xml:space="preserve" y="0px">
+                                            <path class="deco-layer deco-layer--1"
+                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--2"
+                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--3"
+                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                                                fill="#FFFFFF" opacity="0.7"></path>
+                                            <path class="deco-layer deco-layer--4"
+                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                                                fill="#FFFFFF"></path>
+                                        </svg>
+
+
+                                        <div class="pricing-price">
+                                            <img src="img/path.png" width="80" alt=""
+                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
+                                        </div>
+                                        <h3 class="pricing-title">Test Name</h3>
+                                    </div>
+                                    <p>
+                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
+                                                Type : Blood Test</strong></li>
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Clinic
+                                                Name : Clinic XYZ</strong></li>
+                                    </ul>
+                                    </p>
+                                    <div class="p-4">
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myPathologyViewModal"
+                                            class="btn btn-primaryy w-100">View Days</a>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <div class="pricing-item features-item ja-animate mx-4"
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 297px;">
+                                    <div class="pricing-deco">
+                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
+                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
+                                            width="300px" x="0px" xml:space="preserve" y="0px">
+                                            <path class="deco-layer deco-layer--1"
+                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--2"
+                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
+                                                fill="#FFFFFF" opacity="0.6"></path>
+                                            <path class="deco-layer deco-layer--3"
+                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
+                                                fill="#FFFFFF" opacity="0.7"></path>
+                                            <path class="deco-layer deco-layer--4"
+                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
+                                                fill="#FFFFFF"></path>
+                                        </svg>
+
+
+                                        <div class="pricing-price">
+                                            <img src="img/path.png" width="80" alt=""
+                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
+                                        </div>
+                                        <h3 class="pricing-title">Test Name</h3>
+                                    </div>
+                                    <p>
+                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
+                                                Type : Blood Test</strong></li>
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Clinic
+                                                Name : Clinic XYZ</strong></li>
+                                    </ul>
+                                    </p>
+                                    <div class="p-4">
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myPathologyViewModal"
+                                            class="btn btn-primaryy w-100">View Days</a>
                                     </div>
                                 </div>
 
@@ -918,7 +1068,7 @@
 
 
                                 <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
+                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 297px;">
                                     <div class="pricing-deco">
                                         <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
                                             id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
@@ -948,148 +1098,13 @@
                                     <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
                                         <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
                                                 Type : Blood Test</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Time :
-                                                12:00 - 1:00</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Price :
-                                                ₹ 1900</strong></li>
+                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Clinic
+                                                Name : Clinic XYZ</strong></li>
                                     </ul>
                                     </p>
                                     <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Days</button>
-                                    </div>
-                                </div>
-
-
-
-
-                                <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
-                                    <div class="pricing-deco">
-                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
-                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
-                                            width="300px" x="0px" xml:space="preserve" y="0px">
-                                            <path class="deco-layer deco-layer--1"
-                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--2"
-                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--3"
-                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
-                                                fill="#FFFFFF" opacity="0.7"></path>
-                                            <path class="deco-layer deco-layer--4"
-                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
-                                                fill="#FFFFFF"></path>
-                                        </svg>
-
-
-                                        <div class="pricing-price">
-                                            <img src="img/path.png" width="80" alt=""
-                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
-                                        </div>
-                                        <h3 class="pricing-title">Test Name</h3>
-                                    </div>
-                                    <p>
-                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
-                                                Type : Blood Test</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Time :
-                                                12:00 - 1:00</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Price :
-                                                ₹ 1900</strong></li>
-                                    </ul>
-                                    </p>
-                                    <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Days</button>
-                                    </div>
-                                </div>
-
-
-
-
-                                <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
-                                    <div class="pricing-deco">
-                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
-                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
-                                            width="300px" x="0px" xml:space="preserve" y="0px">
-                                            <path class="deco-layer deco-layer--1"
-                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--2"
-                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--3"
-                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
-                                                fill="#FFFFFF" opacity="0.7"></path>
-                                            <path class="deco-layer deco-layer--4"
-                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
-                                                fill="#FFFFFF"></path>
-                                        </svg>
-
-
-                                        <div class="pricing-price">
-                                            <img src="img/path.png" width="80" alt=""
-                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
-                                        </div>
-                                        <h3 class="pricing-title">Test Name</h3>
-                                    </div>
-                                    <p>
-                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
-                                                Type : Blood Test</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Time :
-                                                12:00 - 1:00</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Price :
-                                                ₹ 1900</strong></li>
-                                    </ul>
-                                    </p>
-                                    <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Days</button>
-                                    </div>
-                                </div>
-
-
-
-                                <div class="pricing-item features-item ja-animate mx-4"
-                                    data-animation="move-from-bottom" data-delay="item-0" style="min-height: 497px;">
-                                    <div class="pricing-deco">
-                                        <svg class="pricing-deco-img" enable-background="new 0 0 300 100" height="100px"
-                                            id="Layer_1" preserveAspectRatio="none" version="1.1" viewBox="0 0 300 100"
-                                            width="300px" x="0px" xml:space="preserve" y="0px">
-                                            <path class="deco-layer deco-layer--1"
-                                                d="M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--2"
-                                                d="M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z"
-                                                fill="#FFFFFF" opacity="0.6"></path>
-                                            <path class="deco-layer deco-layer--3"
-                                                d="M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716H42.401L43.415,98.342z"
-                                                fill="#FFFFFF" opacity="0.7"></path>
-                                            <path class="deco-layer deco-layer--4"
-                                                d="M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z"
-                                                fill="#FFFFFF"></path>
-                                        </svg>
-
-
-                                        <div class="pricing-price">
-                                            <img src="img/path.png" width="80" alt=""
-                                                style="filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.411));">
-                                        </div>
-                                        <h3 class="pricing-title">Test Name</h3>
-                                    </div>
-                                    <p>
-                                    <ul class="list-group list-group-flush text-start" style="margin-top: -60px;">
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Test
-                                                Type : Blood Test</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Time :
-                                                12:00 - 1:00</strong></li>
-                                        <li class="list-group-item" style="text-transform: capitalize;"><strong>Price :
-                                                ₹ 1900</strong></li>
-                                    </ul>
-                                    </p>
-                                    <div class="p-4">
-                                        <button class="btn btn-primaryy w-100">View Days</button>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#myPathologyViewModal"
+                                            class="btn btn-primaryy w-100">View Days</a>
                                     </div>
                                 </div>
 
@@ -1195,12 +1210,22 @@
                                 class="clinic_photos mt-4 d-flex gap-4 flex-wrap justify-content-start align-items-center">
 
 
-                                <img src="img/lifeline.png" width="160" alt="">
-                                <img src="img/lifeline.png" width="160" alt="">
-                                <img src="img/lifeline.png" width="160" alt="">
-                                <img src="img/lifeline.png" width="160" alt="">
-                                <img src="img/lifeline.png" width="160" alt="">
-                                <img src="img/lifeline.png" width="160" alt="">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#myPhotosViewModal"><img
+                                        src="img/lifeline.png" width="160" alt=""></a>
 
 
                             </div>
@@ -1329,6 +1354,195 @@
 
 
 
+
+    <!-- opd view modal -->
+    <div class="modal fade" id="myOPDViewModal" tabindex="-1" aria-labelledby="myOPDViewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-primary" id="exampleModalLabel"><img src="img/doctor.png" width="40" alt=""> Dr.
+                        Doctor Name</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color:#051225;">
+                    <p class="sp"><strong>Specialization: </strong>GASTROLENTEROLOGY</p>
+                    <p class="fees"><strong>Fees: </strong>₹ 900</p>
+
+
+                    <div class="time">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Monday</td>
+                                    <td>10:00 AM - 11:00 AM</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Wednesday</td>
+                                    <td>11:00 AM - 01:00 PM</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <button type="button" class="btn btn-primaryy w-100" data-bs-dismiss="modal">Close It</button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- pathology view modal -->
+    <div class="modal fade" id="myPathologyViewModal" tabindex="-1" aria-labelledby="myPathologyViewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-primary" id="exampleModalLabel"><img src="img/path.png" width="40" alt=""> Test Name
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="color: #051225;">
+
+                    <p class="sp" style="margin: 0;"><strong>Clinic Name: </strong>Clinic XYZ</p>
+                    <p class="sp mt-2" style="margin: 0;"><strong>Test Type: </strong>Blood Test</p>
+
+
+                    <div class="time mt-2">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Day</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Monday</td>
+                                    <td>10:00 AM - 11:00 AM</td>
+                                    <td>₹ 1000</td>
+                                </tr>
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Wednesday</td>
+                                    <td>11:00 AM - 01:00 PM</td>
+                                    <td>₹ 900</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <button type="button" class="btn btn-primaryy w-100" data-bs-dismiss="modal">Close It</button>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- photos view modal -->
+    <div class="modal fade" id="myPhotosViewModal" tabindex="-1" aria-labelledby="myPhotosViewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <img src="img/lifeline.png" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- inquiry send modal -->
+    <div class="modal fade" id="myInquirySendModal" tabindex="-1" aria-labelledby="myInquirySendModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <h3 class="text-center mb-2 text-primary">Fill this form and get best deals from Doctorwala </h3>
+
+                    <form>
+                        <div class="row g-3">
+
+
+                            <div class="col-12">
+                                <label for="clinic_name" class="form-label fw-bold"><span class="text-danger"><i class="fa fa-stethoscope" aria-hidden="true"></i></span> Inquiry About</label>
+                                <input type="text" class="form-control border-0 bg-light px-4" id="clinic_name"
+                                    name="clinic_name" value="clinic_name" style="height: 55px;">
+                            </div>
+
+
+                            <div class="col-6">
+                                <label for="user_name" class="form-label fw-bold"><span class="text-danger"><i class="fa fa-stethoscope" aria-hidden="true"></i></span> Your Name</label>
+                                <input type="text" class="form-control border-0 bg-light px-4" value="user_name"
+                                    name="user_name" id="user_name" style="height: 55px;">
+                            </div>
+
+                            <div class="col-6">
+                                <label for="user_mobile" class="form-label fw-bold"><span class="text-danger"><i class="fa fa-stethoscope" aria-hidden="true"></i></span> Your Mobile</label>
+                                <input type="text" class="form-control border-0 bg-light px-4" value="user_mobile"
+                                    name="user_mobile" id="user_mobile" style="height: 55px;">
+                            </div>
+
+                            <div class="col-12">
+                                <label for="user_email" class="form-label fw-bold"><span class="text-danger"><i class="fa fa-stethoscope" aria-hidden="true"></i></span> Your Email</label>
+                                <input type="text" class="form-control border-0 bg-light px-4"
+                                    value="useremail@gmail.com" name="user_email" id="user_email" style="height: 55px;">
+                            </div>
+
+
+                            <div class="col-12">
+                                <label for="user_inquiry" class="form-label fw-bold"><span class="text-danger"><i class="fa fa-stethoscope" aria-hidden="true"></i></span> Your Inquiry</label>
+                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="5"
+                                    placeholder="Message" name="user_inquiry" id="user_inquiry"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Send Inquiry</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
