@@ -431,13 +431,13 @@
 
                         <div class="d-buttons">
                             <a href="" data-bs-toggle="modal" data-bs-target="#myInquirySendModal"
-                                class="btn btn-dark btn-darkk py-md-3 px-md-5 me-3 animated slideInLeft">Send
+                                class="btn btn-dark btn-darkk py-md-3 px-md-5 me-3 mb-2 animated slideInLeft">Send
                                 Inquiry</a>
 
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 me-3 animated slideInRight">See
+                            <a href="" class="btn btn-secondary py-md-3 px-md-5 me-3 mb-2 animated slideInRight">See
                                 Location</a>
 
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 animated slideInRight">Time - Day</a>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#myDoctorViewModal" class="btn btn-primary py-md-3 px-md-5 mb-2 animated slideInRight">Day & Time</a>
                         </div>
 
 
@@ -694,12 +694,12 @@
 
 
 
-    <!-- opd view modal -->
-    <div class="modal fade" id="myOPDViewModal" tabindex="-1" aria-labelledby="myOPDViewModalLabel" aria-hidden="true">
+    <!-- doctor view modal -->
+    <div class="modal fade" id="myDoctorViewModal" tabindex="-1" aria-labelledby="myDoctorViewModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel"><img src="img/doctor.png" width="40" alt=""> Dr.
+                    <h2 class="modal-title text-primary" id="exampleModalLabel"><img src="img/doctor.png" width="40" alt=""> Dr.
                         Doctor Name</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -737,7 +737,7 @@
 
 
 
-                    <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">CLOSE IT</button>
+                    <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">CLOSE IT</button>
 
 
 
@@ -747,63 +747,6 @@
     </div>
 
 
-
-    <!-- pathology view modal -->
-    <div class="modal fade" id="myPathologyViewModal" tabindex="-1" aria-labelledby="myPathologyViewModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2 class="modal-title" id="exampleModalLabel"><img src="img/path.png" width="40" alt=""> Test Name
-                    </h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-
-                    <p class="sp" style="margin: 0;"><strong>Clinic Name: </strong>Clinic XYZ</p>
-                    <p class="sp" style="margin: 0;"><strong>Test Type: </strong>Blood Test</p>
-
-
-                    <div class="time mt-2">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Day</th>
-                                    <th scope="col">Time</th>
-                                    <th scope="col">Price</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Monday</td>
-                                    <td>10:00 AM - 11:00 AM</td>
-                                    <td>₹ 1000</td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Wednesday</td>
-                                    <td>11:00 AM - 01:00 PM</td>
-                                    <td>₹ 900</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                    </div>
-
-
-
-                    <button type="button" class="btn btn-success w-100" data-bs-dismiss="modal">CLOSE IT</button>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
