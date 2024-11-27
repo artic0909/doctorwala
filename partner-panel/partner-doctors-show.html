@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Partner Service Details</title>
+    <title>Partner Doctor Details Show</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../partner-assets">
     <link rel="stylesheet" href="../partner-assets/vendors/ti-icons/css/themify-icons.css">
@@ -305,7 +305,6 @@
 
 
 
-
             <!-- partial -->
             <div class="main-panel">
 
@@ -324,10 +323,9 @@
 
                             <div class="row">
                                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
-                                    <h3 class="font-weight-bold">Add Services !</h3>
+                                    <h3 class="font-weight-bold">Your Details !</h3>
                                     <h6 class="font-weight-normal mb-0"><span><i class="fa fa-stethoscope text-danger"
-                                                aria-hidden="true"></i></span>&nbsp;Add services, which are provided by
-                                        your clinic <b>e.g- Ambulance service etc.</b>
+                                                aria-hidden="true"></i></span>&nbsp;Here is the details.
                                     </h6>
                                 </div>
                             </div>
@@ -343,19 +341,79 @@
                                                 <th scope="col">#</th>
                                                 <th scope="col">Edit</th>
                                                 <th scope="col">Delete</th>
-                                                <th scope="col">Service Name</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Authorized Name</th>
+                                                <th scope="col">Specialization</th>
+                                                <th scope="col">GSTIN</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Mobile</th>
+                                                <th scope="col">Address</th>
+                                                <th scope="col">Day</th>
+                                                <th scope="col">Time</th>
+                                                <th scope="col">Fees</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">1</th>
+
                                                 <td><a href="" data-target="#myEditModal" data-toggle="modal"
                                                         class="ed-btn"><i class="fa-solid fa-pen-to-square text-success"
-                                                            style="font-size: 1.4rem;"></i></a></td>
+                                                            style="font-size: 1.1rem;"></i></a></td>
+
+
                                                 <td><a href="" data-target="#myDeleteModal" data-toggle="modal"
                                                         class="ed-btn"><i class="fa-solid fa-trash-can text-danger"
-                                                            style="font-size: 1.4rem;"></i></a></td>
-                                                <td style="font-size: 1.2rem;">Ambulance</td>
+                                                            style="font-size: 1.1rem;"></i></a></td>
+
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>Available</b></p>
+                                                </td>
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>Saklin Mustak</b></p>
+                                                </td>
+
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>ENT</b></p>
+                                                </td>
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>GST45545454</b></p>
+                                                </td>
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>sm@gmail.com</b></p>
+                                                </td>
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>8856868343</b></p>
+                                                </td>
+
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>address, ranihati</b></p>
+                                                </td>
+
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>Wedness Day</b></p>
+                                                </td>
+
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>9:00 AM - 11:00 AM</b></p>
+                                                </td>
+
+
+                                                <td style="font-size: 1.05rem;">
+                                                    <p class="m-0"><b>₹ 999</b></p>
+                                                </td>
+
+
+
                                             </tr>
                                         </tbody>
                                     </table>
@@ -381,35 +439,6 @@
 
 
 
-                <!-- floating right button -->
-                <a type="button" class="btn btn-primary rounded btn-icon-text p-0 px-2 py-2 floating-btnn"
-                    data-target="#myAddModal" data-toggle="modal" style="width: fit-content;">
-                    <i class="fa fa-2x fa-plus" aria-hidden="true" style="font-size: 1.7rem;"></i>
-                </a>
-
-
-
-
-                <!-- Add Modal -->
-                <div class="modal fade" id="myAddModal" tabindex="-1" role="dialog" aria-labelledby="myAddModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-
-                            <form class="modal-body">
-                                <div class="form-group">
-                                    <label for=""><i class="fa fa-ambulance text-success" aria-hidden="true"></i> Add
-                                        Service <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" name="" id="">
-                                </div>
-
-                                <button type="submit" class="btn btn-success rounded w-100">Submit</button>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
 
                 <!-- Edit Modal -->
                 <div class="modal fade" id="myEditModal" tabindex="-1" role="dialog" aria-labelledby="myEditModalLabel"
@@ -417,14 +446,136 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
 
+                            <div class="modal-header">
+                                <h3 class="modal-title text-primary" style="font-weight: 700;"><i
+                                        class="fa fa-user-doctor text-primary" aria-hidden="true"></i> Edit OPD Details
+                                </h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
                             <form class="modal-body">
                                 <div class="form-group">
-                                    <label for=""><i class="fa fa-ambulance text-success" aria-hidden="true"></i> Edit
-                                        Service <span class="text-danger">*</span></label>
+                                    <label for=""><i class="fa fa-stethoscope text-danger" aria-hidden="true"></i>
+                                        Doctor Name <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" name="" id="" value="">
                                 </div>
 
-                                <button type="submit" class="btn btn-success rounded w-100">Submit</button>
+                                <div class="form-group">
+                                    <label for=""><i class="fa fa-stethoscope text-danger" aria-hidden="true"></i>
+                                        Doctor Specialization <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="" id="" value="">
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label for=""><i class="fa fa-stethoscope text-danger" aria-hidden="true"></i> Day
+                                        <span class="text-danger">*</span></label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>Select Day</option>
+                                        <option value="All Day">All Day</option>
+                                        <option value="Monday">Monday</option>
+                                        <option value="Tuesday">Tuesday</option>
+                                        <option value="Wednesday">Wednesday</option>
+                                        <option value="Thursday">Thursday</option>
+                                        <option value="Friday">Friday</option>
+                                        <option value="Saturday">Saturday</option>
+                                        <option value="Sunday">Sunday</option>
+                                    </select>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <label for=""><i class="fa fa-stethoscope text-danger" aria-hidden="true"></i> Time
+                                        From
+                                        <span class="text-danger">*</span></label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>Select Time</option>
+                                        <option value="07:30 AM">7:30 AM</option>
+                                        <option value="08:00 AM">8:00 AM</option>
+                                        <option value="08:30 AM">8:30 AM</option>
+                                        <option value="09:00 AM">9:00 AM</option>
+                                        <option value="09:30 AM">9:30 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="10:30 AM">10:30 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="11:30 AM">11:30 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="12:30 PM">12:30 PM</option>
+                                        <option value="01:00 PM">1:00 PM</option>
+                                        <option value="01:30 PM">1:30 PM</option>
+                                        <option value="02:00 PM">2:00 PM</option>
+                                        <option value="02:30 PM">2:30 PM</option>
+                                        <option value="03:00 PM">3:00 PM</option>
+                                        <option value="03:30 PM">3:30 PM</option>
+                                        <option value="04:00 PM">4:00 PM</option>
+                                        <option value="04:30 PM">4:30 PM</option>
+                                        <option value="05:00 PM">5:00 PM</option>
+                                        <option value="05:30 PM">5:30 PM</option>
+                                        <option value="06:00 PM">6:00 PM</option>
+                                        <option value="06:30 PM">6:30 PM</option>
+                                        <option value="07:00 PM">7:00 PM</option>
+                                        <option value="07:30 PM">7:30 PM</option>
+                                        <option value="08:00 PM">8:00 PM</option>
+                                        <option value="08:30 PM">8:30 PM</option>
+                                        <option value="09:00 PM">9:00 PM</option>
+                                        <option value="09:30 PM">9:30 PM</option>
+                                        <option value="10:00 PM">10:00 PM</option>
+                                        <option value="10:30 PM">10:30 PM</option>
+                                        <option value="11:00 PM">11:00 PM</option>
+
+                                    </select>
+                                </div>
+
+
+
+
+                                <div class="form-group">
+                                    <label for=""><i class="fa fa-stethoscope text-danger" aria-hidden="true"></i> Time
+                                        To
+                                        <span class="text-danger">*</span></label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>Select Time</option>
+                                        <option value="07:30 AM">7:30 AM</option>
+                                        <option value="08:00 AM">8:00 AM</option>
+                                        <option value="08:30 AM">8:30 AM</option>
+                                        <option value="09:00 AM">9:00 AM</option>
+                                        <option value="09:30 AM">9:30 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="10:30 AM">10:30 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="11:30 AM">11:30 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="12:30 PM">12:30 PM</option>
+                                        <option value="01:00 PM">1:00 PM</option>
+                                        <option value="01:30 PM">1:30 PM</option>
+                                        <option value="02:00 PM">2:00 PM</option>
+                                        <option value="02:30 PM">2:30 PM</option>
+                                        <option value="03:00 PM">3:00 PM</option>
+                                        <option value="03:30 PM">3:30 PM</option>
+                                        <option value="04:00 PM">4:00 PM</option>
+                                        <option value="04:30 PM">4:30 PM</option>
+                                        <option value="05:00 PM">5:00 PM</option>
+                                        <option value="05:30 PM">5:30 PM</option>
+                                        <option value="06:00 PM">6:00 PM</option>
+                                        <option value="06:30 PM">6:30 PM</option>
+                                        <option value="07:00 PM">7:00 PM</option>
+                                        <option value="07:30 PM">7:30 PM</option>
+                                        <option value="08:00 PM">8:00 PM</option>
+                                        <option value="08:30 PM">8:30 PM</option>
+                                        <option value="09:00 PM">9:00 PM</option>
+                                        <option value="09:30 PM">9:30 PM</option>
+                                        <option value="10:00 PM">10:00 PM</option>
+                                        <option value="10:30 PM">10:30 PM</option>
+                                        <option value="11:00 PM">11:00 PM</option>
+
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary rounded w-100">Submit</button>
                             </form>
 
                         </div>

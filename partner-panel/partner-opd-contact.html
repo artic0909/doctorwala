@@ -164,9 +164,20 @@
 
                     <!-- OPD -->
                     <li class="nav-item">
-                        <a class="nav-link" href="partner-opd.html">
-                            <i class="fa-solid fa-user-doctor"></i>&nbsp; <span class="menu-title">OPD</span>
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic12" aria-expanded="false"
+                            aria-controls="ui-basic12">
+                            <i class="fa fa-user-doctor" aria-hidden="true"></i>&nbsp; <span
+                                class="menu-title">OPD</span><i class="menu-arrow"></i>
                         </a>
+                        <div class="collapse" id="ui-basic12">
+                            <ul class="nav flex-column sub-menu">
+
+                                <li class="nav-item"> <a class="nav-link" href="partner-opd.html">Upload OPD</a></li>
+
+                                <li class="nav-item"> <a class="nav-link" href="partner-opd-show.html">Show OPD</a></li>
+
+                            </ul>
+                        </div>
                     </li>
 
 
@@ -176,9 +187,22 @@
 
                     <!-- Pathology -->
                     <li class="nav-item">
-                        <a class="nav-link" href="partner-pathology.html">
-                            <i class="fa-solid fa-syringe"></i>&nbsp; <span class="menu-title">Pathology</span>
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic123" aria-expanded="false"
+                            aria-controls="ui-basic123">
+                            <i class="fa fa-syringe" aria-hidden="true"></i>&nbsp; <span
+                                class="menu-title">Pathology</span><i class="menu-arrow"></i>
                         </a>
+                        <div class="collapse" id="ui-basic123">
+                            <ul class="nav flex-column sub-menu">
+
+                                <li class="nav-item"> <a class="nav-link" href="partner-pathology.html">Upload Path</a>
+                                </li>
+
+                                <li class="nav-item"> <a class="nav-link" href="partner-pathology-show.html">Show
+                                        Path</a></li>
+
+                            </ul>
+                        </div>
                     </li>
 
 
@@ -187,9 +211,22 @@
 
                     <!-- Doctors -->
                     <li class="nav-item">
-                        <a class="nav-link" href="partner-doctors.html">
-                            <i class="fa-solid fa-stethoscope"></i>&nbsp; <span class="menu-title">Doctors</span>
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic1234" aria-expanded="false"
+                            aria-controls="ui-basic1234">
+                            <i class="fa fa-stethoscope" aria-hidden="true"></i>&nbsp; <span
+                                class="menu-title">Doctor</span><i class="menu-arrow"></i>
                         </a>
+                        <div class="collapse" id="ui-basic1234">
+                            <ul class="nav flex-column sub-menu">
+
+                                <li class="nav-item"> <a class="nav-link" href="partner-doctors.html">Upload Doctor</a>
+                                </li>
+
+                                <li class="nav-item"> <a class="nav-link" href="partner-doctors-show.html">Show
+                                        Doctor</a></li>
+
+                            </ul>
+                        </div>
                     </li>
 
 
@@ -360,7 +397,8 @@
 
                                             <div class="col-4 form-group">
                                                 <label for="name" style="font-weight: 700;"><i
-                                                        class="fa fa-location-pin-lock text-primary" aria-hidden="true"></i>
+                                                        class="fa fa-location-pin-lock text-primary"
+                                                        aria-hidden="true"></i>
                                                     Pin Code <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" id="name" name="name"
                                                     value="xyz@gmail.com" style="height: 55px;">
@@ -370,7 +408,8 @@
 
                                             <div class="col-4 form-group">
                                                 <label for="name" style="font-weight: 700;"><i
-                                                        class="fa fa-map-location-dot text-primary" aria-hidden="true"></i>
+                                                        class="fa fa-map-location-dot text-primary"
+                                                        aria-hidden="true"></i>
                                                     Google Map <span class="text-danger">*</span></label>
                                                 <input type="text" class="form-control" id="name" name="name"
                                                     value="xyz@gmail.com" style="height: 55px;">
@@ -456,7 +495,7 @@
                                                         class="fa-solid fa-location-dot text-primary"></i> Address
                                                     <span class="text-danger">*</span></label>
 
-                                                    <textarea name="" id="" class="form-control" rows="7"></textarea>
+                                                <textarea name="" id="" class="form-control" rows="7"></textarea>
                                             </div>
 
 
