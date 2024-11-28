@@ -358,9 +358,16 @@
 
 
 
-                                                <td style="font-size: 1.2rem;"><p class="m-0"><b>TKT3535</b></p></td>
-                                                <td style="font-size: 1.2rem;"><p class="m-0"><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, maiores?</b></p></td>
-                                                <td style="font-size: 1.2rem;"><p class="m-0"><b>Lorem ipsum dolor sit amet.</b></p></td>
+                                                <td style="font-size: 1.2rem;">
+                                                    <p class="m-0"><b>TKT3535</b></p>
+                                                </td>
+                                                <td style="font-size: 1.2rem;">
+                                                    <p class="m-0"><b>Lorem ipsum dolor sit amet, consectetur
+                                                            adipisicing elit. Eius, maiores?</b></p>
+                                                </td>
+                                                <td style="font-size: 1.2rem;">
+                                                    <p class="m-0"><b>Lorem ipsum dolor sit amet.</b></p>
+                                                </td>
 
 
 
@@ -389,11 +396,34 @@
 
 
 
-                <!-- floating right button -->
-                <a type="button" class="btn btn-primary rounded btn-icon-text p-0 px-2 py-2 floating-btnn"
-                    data-target="#myAddModal" data-toggle="modal" style="width: fit-content;">
-                    <i class="fa fa-2x fa-plus" aria-hidden="true" style="font-size: 1.7rem;"></i>
-                </a>
+
+
+                <!-- Delete Modal -->
+                <div class="modal fade" id="myDeleteModal" tabindex="-1" role="dialog"
+                    aria-labelledby="myDeleteModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+
+                            <form action="" class="modal-body">
+                                <div class="form-group d-flex flex-column align-items-center">
+                                    <i class="fa-solid fa-trash-can fa-2x text-danger"></i>
+
+                                    <h3 class="mt-3">Are You Sure ?</h3>
+
+                                    <p class="mt-2 text-center">Do you really want to delete these record? This Process
+                                        cannot be undone.</p>
+
+                                    <div class="btnss d-flex justify-content-around align-items-center w-100 mt-3">
+                                        <button type="button" class="btn btn-primary rounded w-50 mr-3"
+                                            data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-danger rounded w-50">Confirm</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -402,7 +432,6 @@
 
 
 
-                
 
 
 
