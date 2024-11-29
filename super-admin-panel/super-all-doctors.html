@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>All OPD Details</title>
+    <title>All Doctors Details</title>
 
     <!-- plugins:css -->
     <link rel="stylesheet" href="../partner-assets">
@@ -364,7 +364,7 @@
 
                                     <div class="row">
                                         <div class="col-3">
-                                            <h3 class="font-weight-bold">All OPD Details</h3>
+                                            <h3 class="font-weight-bold">All Doctors Details</h3>
                                         </div>
 
                                         <div class="col-9 d-flex justify-content-end align-items-center">
@@ -438,23 +438,9 @@
                                                         </a>
 
 
-                                                        <a href="../super-admin-panel/super-edit-opd-details.html"
+                                                        <a href="../super-admin-panel/super-edit-doctors-details.html"
                                                             class="ed-btn ml-3">
                                                             <i class="fa-solid fa-pen-to-square text-primaryy"
-                                                                style="font-size: 1rem;"></i>
-                                                        </a>
-
-                                                        <a href="" data-target="#myAddOPDModal" data-toggle="modal"
-                                                            class="ed-btn ml-3">
-                                                            <i class="fa-solid fa-plus text-success"
-                                                                style="font-size: 1rem;"></i>
-                                                        </a>
-
-
-
-                                                        <a href="" data-target="#myallOPDShowModal" data-toggle="modal"
-                                                            class="ed-btn ml-3">
-                                                            <i class="fa-solid fa-user-doctor text-dark"
                                                                 style="font-size: 1rem;"></i>
                                                         </a>
                                                     </div>
@@ -587,278 +573,6 @@
 
 
 
-                <!-- My add OPD Modal -->
-                <div class="modal fade" id="myAddOPDModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myAddOPDModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-
-
-                            <div class="modal-header">
-                                <p style="font-size: 1.5rem; font-weight: 700;" class="modal-title"
-                                    id="myAddOPDModalLabel">Add OPD Details</p>
-                            </div>
-
-
-
-                            <form class="prof-view m-4">
-
-
-
-                                <p class="m-0" style="font-size: 1.3rem; font-weight: 700;">Clinic Name: xyz</p>
-                                <p class="m-0 mt-1" style="font-size: 1.3rem; font-weight: 700;">Contact Person: xyz</p>
-
-
-
-
-                                <div class="from-view row  mt-5">
-
-
-
-                                    <div class="col-3 form-group">
-                                        <label for="name" style="font-weight: 700;"><i
-                                                class="fa-solid fa-user-doctor text-primary"></i>
-                                            Doctor Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="name" name="name" value="xyz clinic"
-                                            style="height: 55px;">
-                                    </div>
-
-                                    <div class="col-3 form-group">
-                                        <label for="name" style="font-weight: 700;"><i
-                                                class="fa fa-graduation-cap text-primary" aria-hidden="true"></i>
-                                            Designation <span class="text-danger">*</span></label>
-                                        <select name="" id="" class="form-control" style="height: 55px;">
-                                            <option selected>Select</option>
-                                            <option value="MD">MD</option>
-                                            <option value="Dr">Dr</option>
-                                            <option value="Prof">Prof</option>
-                                            <option value="BDS">BDS</option>
-                                        </select>
-                                    </div>
-
-
-
-                                    <div class="col-4 form-group">
-                                        <label for="name" style="font-weight: 700;"><i
-                                                class="fa fa-stethoscope text-primary" aria-hidden="true"></i>
-                                            Specialist <span class="text-danger">*</span></label>
-                                        <select name="" id="" class="form-control" style="height: 55px;">
-                                            <option selected>Select</option>
-                                            <option value="allergy_immunology">Allergy and Immunology</option>
-                                            <option value="anesthesiology">Anesthesiology</option>
-                                            <option value="cardiology">Cardiology</option>
-                                            <option value="dermatology">Dermatology</option>
-                                            <option value="endocrinology">Endocrinology</option>
-                                            <option value="emergency_medicine">Emergency Medicine</option>
-                                            <option value="family_medicine">Family Medicine</option>
-                                            <option value="gastroenterology">Gastroenterology</option>
-                                            <option value="general_surgery">General Surgery</option>
-                                            <option value="geriatrics">Geriatrics</option>
-                                            <option value="hematology">Hematology</option>
-                                            <option value="infectious_disease">Infectious Disease</option>
-                                            <option value="internal_medicine">Internal Medicine</option>
-                                            <option value="neurology">Neurology</option>
-                                            <option value="neurosurgery">Neurosurgery</option>
-                                            <option value="obstetrics_gynecology">Obstetrics and Gynecology
-                                            </option>
-                                            <option value="oncology">Oncology</option>
-                                            <option value="ophthalmology">Ophthalmology</option>
-                                            <option value="orthopedics">Orthopedics</option>
-                                            <option value="otolaryngology">Otolaryngology (ENT)</option>
-                                            <option value="pediatrics">Pediatrics</option>
-                                            <option value="plastic_surgery">Plastic Surgery</option>
-                                            <option value="psychiatry">Psychiatry</option>
-                                            <option value="pulmonology">Pulmonology</option>
-                                            <option value="radiology">Radiology</option>
-                                            <option value="rheumatology">Rheumatology</option>
-                                            <option value="sports_medicine">Sports Medicine</option>
-                                            <option value="urology">Urology</option>
-                                            <option value="vascular_surgery">Vascular Surgery</option>
-                                            <option value="nephrology">Nephrology</option>
-                                            <option value="pathology">Pathology</option>
-                                            <option value="palliative_care">Palliative Care</option>
-                                            <option value="physical_medicine_rehabilitation">Physical Medicine
-                                                and Rehabilitation</option>
-                                            <option value="proctology">Proctology</option>
-                                            <option value="thoracic_surgery">Thoracic Surgery</option>
-                                            <option value="genetics">Genetics</option>
-                                            <option value="nuclear_medicine">Nuclear Medicine</option>
-                                            <option value="pain_management">Pain Management</option>
-                                            <option value="public_health">Public Health</option>
-                                            <option value="pharmacology">Pharmacology</option>
-
-                                        </select>
-                                    </div>
-
-
-
-
-                                    <div class="col-2 form-group">
-                                        <label for="name" style="font-weight: 700;"><i
-                                                class="fa fa-indian-rupee-sign text-primary" aria-hidden="true"></i>
-                                            Doctor Fees <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" id="name" name="name" value="999"
-                                            style="height: 55px;">
-                                    </div>
-
-
-
-
-
-                                    <!-- multiple -->
-                                    <div id="add-same-section" class="row col-12">
-
-
-                                        <div class="col-3 form-group">
-                                            <label for="name" style="font-weight: 700;"><i
-                                                    class="fa-solid fa-calendar-days text-primary"></i>
-                                                Day <span class="text-danger">*</span></label>
-                                            <select name="" id="" class="form-control" style="height: 55px;">
-                                                <option selected>Select Day</option>
-                                                <option value="All Day">All Day</option>
-                                                <option value="Monday">Monday</option>
-                                                <option value="Tuesday">Tuesday</option>
-                                                <option value="Wednesday">Wednesday</option>
-                                                <option value="Thursday">Thursday</option>
-                                                <option value="Friday">Friday</option>
-                                                <option value="Saturday">Saturday</option>
-                                                <option value="Sunday">Sunday</option>
-                                            </select>
-                                        </div>
-
-
-
-
-
-                                        <div class="col-4 form-group">
-                                            <label for="name" style="font-weight: 700;"><i
-                                                    class="fa-solid fa-clock text-primary"></i> Time From
-                                                <span class="text-danger">*</span></label>
-
-                                            <input type="time" class="form-control" style="height: 55px;">
-                                        </div>
-
-
-
-
-
-                                        <div class="col-4 form-group">
-                                            <label for="name" style="font-weight: 700;"><i
-                                                    class="fa-solid fa-clock-rotate-left text-primary"></i> Time
-                                                To
-                                                <span class="text-danger">*</span></label>
-
-                                            <div class="d-flex align-items-center">
-                                                <input type="time" class="form-control" style="height: 55px;">
-
-                                                <button type="button" id="add-section-button"
-                                                    class="btn btn-primary rounded col-3 ml-3"
-                                                    style="height: 55px; font-weight: 700;">ADD</button>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-
-                                    </div>
-
-
-
-
-                                    <div class="d-flex justify-content-center w-100">
-                                        <button type="submit" class="btn btn-danger rounded">Upload
-                                            Details</button>
-                                    </div>
-
-
-
-
-                                </div>
-
-
-
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <!-- My Show OPD Modal -->
-                <div class="modal fade" id="myallOPDShowModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myallOPDShowModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-
-
-                            <div class="modal-header">
-                                <p style="font-size: 1.5rem; font-weight: 700;" class="modal-title"
-                                    id="myallOPDShowModalLabel">All OPD Details</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-
-
-
-                            <div class="modal-body">
-
-
-
-                                <p class="m-0" style="font-size: 1.2rem; font-weight: 700;">Clinic Name: xyz</p>
-                                <p class="m-0 mt-1" style="font-size: 1.2rem; font-weight: 700;">Contact Person: xyz</p>
-
-
-
-
-                                <table class="table table-stripped table-bordered mt-3">
-                                    <thead>
-                                        <tr>
-                                            <th>Doctor Name</th>
-                                            <th>Designation</th>
-                                            <th>Specialist</th>
-                                            <th>Doctor Fees</th>
-                                            <th>Day & Time</th>
-                                        </tr>
-                                    </thead>
-
-
-                                    <tbody>
-                                        <tr>
-                                            <td>Dr. xyz</td>
-                                            <td>fsdjhfdjfh</td>
-                                            <td>fsdjhfdjfh</td>
-                                            <td>₹ 999</td>
-
-                                            <td>
-                                                <p class="m-0">
-                                                    <span class="badge badge-primary">Monday - (10:00 AM - 11:00 AM)</span>
-                                                </p>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-
-
-
-                                
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
 
 
 
@@ -928,12 +642,6 @@
     <script src="../partner-assets/js/dashboard.js"></script>
     <script src="../partner-assets/js/Chart.roundedBarCharts.js"></script>
     <!-- End custom js for this page-->
-
-
-
-
-    <!-- add section JS -->
-    <script src="../partner-assets/js/add-section.js"></script>
 </body>
 
 </html>

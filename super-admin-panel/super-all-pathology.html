@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>All OPD Details</title>
+    <title>All Pathology Details</title>
 
     <!-- plugins:css -->
     <link rel="stylesheet" href="../partner-assets">
@@ -364,7 +364,7 @@
 
                                     <div class="row">
                                         <div class="col-3">
-                                            <h3 class="font-weight-bold">All OPD Details</h3>
+                                            <h3 class="font-weight-bold">All Pathology Details</h3>
                                         </div>
 
                                         <div class="col-9 d-flex justify-content-end align-items-center">
@@ -438,23 +438,25 @@
                                                         </a>
 
 
-                                                        <a href="../super-admin-panel/super-edit-opd-details.html"
+                                                        <a href="../super-admin-panel/super-edit-pathology-details.html"
                                                             class="ed-btn ml-3">
                                                             <i class="fa-solid fa-pen-to-square text-primaryy"
                                                                 style="font-size: 1rem;"></i>
                                                         </a>
 
-                                                        <a href="" data-target="#myAddOPDModal" data-toggle="modal"
-                                                            class="ed-btn ml-3">
+
+
+                                                        <a href="" data-target="#myAddPathologyModal"
+                                                            data-toggle="modal" class="ed-btn ml-3">
                                                             <i class="fa-solid fa-plus text-success"
                                                                 style="font-size: 1rem;"></i>
                                                         </a>
 
 
 
-                                                        <a href="" data-target="#myallOPDShowModal" data-toggle="modal"
-                                                            class="ed-btn ml-3">
-                                                            <i class="fa-solid fa-user-doctor text-dark"
+                                                        <a href="" data-target="#myallPathologyShowModal"
+                                                            data-toggle="modal" class="ed-btn ml-3">
+                                                            <i class="fa-solid fa-syringe text-dark"
                                                                 style="font-size: 1rem;"></i>
                                                         </a>
                                                     </div>
@@ -519,37 +521,6 @@
 
 
 
-                <!-- Pass Modal -->
-                <div class="modal fade" id="myPassModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myDeleteModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-
-                            <form action="" class="modal-body">
-                                <div class="form-group d-flex flex-column align-items-center">
-                                    <i class="fa-solid fa-user-secret fa-3x text-danger"></i>
-
-                                    <h3 class="mt-3">It's Me user name !</h3>
-
-                                    <p class="mt-2 text-center" style="font-weight: 700;">⚠️Highly restricted to share
-                                        PassKeys*** to anyone⚠️</p>
-
-                                    <p class="m-0"><strong>Email ID: sm@gmail.com</strong></p>
-
-                                    <p class="m-0"><strong>Passkey: Qr3$-vjDW-UserPass-DW0-0&#</strong></p>
-
-                                    <div class="btnss d-flex justify-content-around align-items-center w-100 mt-3">
-                                        <button type="button" class="btn btn-primary rounded w-50 mr-3"
-                                            data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-danger rounded w-50"
-                                            data-dismiss="modal">Confirm</button>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
 
 
                 <!-- My Active Inactive  Modal -->
@@ -587,22 +558,27 @@
 
 
 
-                <!-- My add OPD Modal -->
-                <div class="modal fade" id="myAddOPDModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myAddOPDModalLabel" aria-hidden="true">
+
+
+
+
+
+
+                <!-- My add Pathology Modal -->
+                <div class="modal fade" id="myAddPathologyModal" tabindex="-1" role="dialog"
+                    aria-labelledby="myAddPathologyModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
 
 
                             <div class="modal-header">
                                 <p style="font-size: 1.5rem; font-weight: 700;" class="modal-title"
-                                    id="myAddOPDModalLabel">Add OPD Details</p>
+                                    id="myAddPathologyModalLabel">Add Pathology Details</p>
                             </div>
 
 
 
                             <form class="prof-view m-4">
-
 
 
                                 <p class="m-0" style="font-size: 1.3rem; font-weight: 700;">Clinic Name: xyz</p>
@@ -615,88 +591,100 @@
 
 
 
-                                    <div class="col-3 form-group">
+                                    <div class="col-4 form-group">
                                         <label for="name" style="font-weight: 700;"><i
-                                                class="fa-solid fa-user-doctor text-primary"></i>
-                                            Doctor Name <span class="text-danger">*</span></label>
+                                                class="fa-solid fa-syringe text-primary"></i>
+                                            Test Name <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="name" name="name" value="xyz clinic"
                                             style="height: 55px;">
                                     </div>
 
-                                    <div class="col-3 form-group">
+                                    <div class="col-4 form-group">
                                         <label for="name" style="font-weight: 700;"><i
-                                                class="fa fa-graduation-cap text-primary" aria-hidden="true"></i>
-                                            Designation <span class="text-danger">*</span></label>
+                                                class="fa fa-sitemap text-primary" aria-hidden="true"></i> Test
+                                            Type <span class="text-danger">*</span></label>
                                         <select name="" id="" class="form-control" style="height: 55px;">
-                                            <option selected>Select</option>
-                                            <option value="MD">MD</option>
-                                            <option value="Dr">Dr</option>
-                                            <option value="Prof">Prof</option>
-                                            <option value="BDS">BDS</option>
+                                            <option value="" selected>Select Type</option>
+
+                                            <option value="cbc">Complete Blood Count (CBC)</option>
+                                            <option value="lft">Liver Function Test (LFT)</option>
+                                            <option value="kft">Kidney Function Test (KFT)</option>
+                                            <option value="rft">Renal Function Test (RFT)</option>
+                                            <option value="lipid_profile">Lipid Profile</option>
+                                            <option value="thyroid_panel">Thyroid Function Tests (T3, T4, TSH)
+                                            </option>
+                                            <option value="hba1c">HbA1c (Glycated Hemoglobin)</option>
+                                            <option value="fasting_blood_sugar">Fasting Blood Sugar (FBS)
+                                            </option>
+                                            <option value="postprandial_blood_sugar">Postprandial Blood Sugar
+                                                (PPBS)</option>
+                                            <option value="urine_analysis">Urine Routine and Microscopy</option>
+                                            <option value="stool_test">Stool Test</option>
+                                            <option value="esr">Erythrocyte Sedimentation Rate (ESR)</option>
+                                            <option value="crp">C-Reactive Protein (CRP)</option>
+                                            <option value="vitamin_d">Vitamin D Test</option>
+                                            <option value="vitamin_b12">Vitamin B12 Test</option>
+                                            <option value="iron_studies">Iron Studies (Ferritin, TIBC, Serum
+                                                Iron)</option>
+                                            <option value="blood_group">Blood Group and Rh Typing</option>
+                                            <option value="pt_inr">Prothrombin Time (PT/INR)</option>
+                                            <option value="d_dimer">D-Dimer Test</option>
+                                            <option value="hiv_test">HIV Test</option>
+                                            <option value="hbsag">Hepatitis B Surface Antigen (HBsAg)</option>
+                                            <option value="hcv_test">Hepatitis C Test</option>
+                                            <option value="widal_test">Widal Test</option>
+                                            <option value="rapid_malaria_test">Rapid Malaria Test</option>
+                                            <option value="dengue_ns1">Dengue NS1 Antigen Test</option>
+                                            <option value="rtpcr">RT-PCR Test (e.g., for COVID-19)</option>
+                                            <option value="pap_smear">Pap Smear</option>
+                                            <option value="psa">Prostate-Specific Antigen (PSA)</option>
+                                            <option value="blood_culture">Blood Culture</option>
+                                            <option value="sputum_culture">Sputum Culture</option>
+                                            <option value="ascitic_fluid_analysis">Ascitic Fluid Analysis
+                                            </option>
+                                            <option value="csf_analysis">Cerebrospinal Fluid (CSF) Analysis
+                                            </option>
+                                            <option value="skin_biopsy">Skin Biopsy</option>
+                                            <option value="fine_needle_aspiration">Fine Needle Aspiration
+                                                Cytology (FNAC)</option>
+                                            <option value="bone_marrow_test">Bone Marrow Aspiration/Biopsy
+                                            </option>
+                                            <option value="microalbumin_test">Urine Microalbumin Test</option>
+                                            <option value="pregnancy_test">Pregnancy Test (hCG)</option>
+                                            <option value="tissue_biopsy">Tissue Biopsy</option>
+                                            <option value="coombs_test">Direct/Indirect Coombs Test</option>
+                                            <option value="ra_factor">Rheumatoid Factor (RA Factor)</option>
+                                            <option value="anti_ccp">Anti-CCP Antibodies</option>
+                                            <option value="ana_test">Anti-Nuclear Antibody (ANA) Test</option>
+                                            <option value="troponin">Troponin Test</option>
+                                            <option value="ck_mb">Creatine Kinase-MB (CK-MB)</option>
+                                            <option value="electrolyte_panel">Electrolyte Panel (Sodium,
+                                                Potassium, Chloride)</option>
+                                            <option value="amylase_lipase">Amylase and Lipase Test</option>
+                                            <option value="serum_calcium">Serum Calcium</option>
+                                            <option value="serum_albumin">Serum Albumin</option>
+                                            <option value="serum_protein">Serum Protein Electrophoresis</option>
+                                            <option value="ldh">Lactate Dehydrogenase (LDH)</option>
+                                            <option value="asthma_panel">Asthma Panel (Allergen Testing)
+                                            </option>
+                                            <option value="allergy_panel">Allergy Panel</option>
+                                            <option value="tumor_markers">Tumor Marker Tests (e.g., CA-125, CA
+                                                19-9)</option>
+
                                         </select>
                                     </div>
+
+
+
+
+
 
 
 
                                     <div class="col-4 form-group">
                                         <label for="name" style="font-weight: 700;"><i
-                                                class="fa fa-stethoscope text-primary" aria-hidden="true"></i>
-                                            Specialist <span class="text-danger">*</span></label>
-                                        <select name="" id="" class="form-control" style="height: 55px;">
-                                            <option selected>Select</option>
-                                            <option value="allergy_immunology">Allergy and Immunology</option>
-                                            <option value="anesthesiology">Anesthesiology</option>
-                                            <option value="cardiology">Cardiology</option>
-                                            <option value="dermatology">Dermatology</option>
-                                            <option value="endocrinology">Endocrinology</option>
-                                            <option value="emergency_medicine">Emergency Medicine</option>
-                                            <option value="family_medicine">Family Medicine</option>
-                                            <option value="gastroenterology">Gastroenterology</option>
-                                            <option value="general_surgery">General Surgery</option>
-                                            <option value="geriatrics">Geriatrics</option>
-                                            <option value="hematology">Hematology</option>
-                                            <option value="infectious_disease">Infectious Disease</option>
-                                            <option value="internal_medicine">Internal Medicine</option>
-                                            <option value="neurology">Neurology</option>
-                                            <option value="neurosurgery">Neurosurgery</option>
-                                            <option value="obstetrics_gynecology">Obstetrics and Gynecology
-                                            </option>
-                                            <option value="oncology">Oncology</option>
-                                            <option value="ophthalmology">Ophthalmology</option>
-                                            <option value="orthopedics">Orthopedics</option>
-                                            <option value="otolaryngology">Otolaryngology (ENT)</option>
-                                            <option value="pediatrics">Pediatrics</option>
-                                            <option value="plastic_surgery">Plastic Surgery</option>
-                                            <option value="psychiatry">Psychiatry</option>
-                                            <option value="pulmonology">Pulmonology</option>
-                                            <option value="radiology">Radiology</option>
-                                            <option value="rheumatology">Rheumatology</option>
-                                            <option value="sports_medicine">Sports Medicine</option>
-                                            <option value="urology">Urology</option>
-                                            <option value="vascular_surgery">Vascular Surgery</option>
-                                            <option value="nephrology">Nephrology</option>
-                                            <option value="pathology">Pathology</option>
-                                            <option value="palliative_care">Palliative Care</option>
-                                            <option value="physical_medicine_rehabilitation">Physical Medicine
-                                                and Rehabilitation</option>
-                                            <option value="proctology">Proctology</option>
-                                            <option value="thoracic_surgery">Thoracic Surgery</option>
-                                            <option value="genetics">Genetics</option>
-                                            <option value="nuclear_medicine">Nuclear Medicine</option>
-                                            <option value="pain_management">Pain Management</option>
-                                            <option value="public_health">Public Health</option>
-                                            <option value="pharmacology">Pharmacology</option>
-
-                                        </select>
-                                    </div>
-
-
-
-
-                                    <div class="col-2 form-group">
-                                        <label for="name" style="font-weight: 700;"><i
                                                 class="fa fa-indian-rupee-sign text-primary" aria-hidden="true"></i>
-                                            Doctor Fees <span class="text-danger">*</span></label>
+                                            Test Price <span class="text-danger">*</span></label>
                                         <input type="text" class="form-control" id="name" name="name" value="999"
                                             style="height: 55px;">
                                     </div>
@@ -768,6 +756,7 @@
 
 
 
+
                                     <div class="d-flex justify-content-center w-100">
                                         <button type="submit" class="btn btn-danger rounded">Upload
                                             Details</button>
@@ -790,8 +779,8 @@
 
 
 
-                <!-- My Show OPD Modal -->
-                <div class="modal fade" id="myallOPDShowModal" tabindex="-1" role="dialog"
+                <!-- My Show Pathology Modal -->
+                <div class="modal fade" id="myallPathologyShowModal" tabindex="-1" role="dialog"
                     aria-labelledby="myallOPDShowModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -799,8 +788,9 @@
 
                             <div class="modal-header">
                                 <p style="font-size: 1.5rem; font-weight: 700;" class="modal-title"
-                                    id="myallOPDShowModalLabel">All OPD Details</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    id="myallOPDShowModalLabel">All Pathology Details</p>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
                             </div>
 
 
@@ -818,10 +808,9 @@
                                 <table class="table table-stripped table-bordered mt-3">
                                     <thead>
                                         <tr>
-                                            <th>Doctor Name</th>
-                                            <th>Designation</th>
-                                            <th>Specialist</th>
-                                            <th>Doctor Fees</th>
+                                            <th>Test Name</th>
+                                            <th>Test Type</th>
+                                            <th>Test Price</th>
                                             <th>Day & Time</th>
                                         </tr>
                                     </thead>
@@ -831,12 +820,12 @@
                                         <tr>
                                             <td>Dr. xyz</td>
                                             <td>fsdjhfdjfh</td>
-                                            <td>fsdjhfdjfh</td>
                                             <td>₹ 999</td>
 
                                             <td>
                                                 <p class="m-0">
-                                                    <span class="badge badge-primary">Monday - (10:00 AM - 11:00 AM)</span>
+                                                    <span class="badge badge-danger">Monday - (10:00 AM - 11:00
+                                                        AM)</span>
                                                 </p>
                                             </td>
                                         </tr>
@@ -846,7 +835,7 @@
 
 
 
-                                
+
 
 
                             </div>
@@ -854,7 +843,6 @@
                         </div>
                     </div>
                 </div>
-
 
 
 
@@ -931,9 +919,8 @@
 
 
 
-
-    <!-- add section JS -->
-    <script src="../partner-assets/js/add-section.js"></script>
+        <!-- add section JS -->
+        <script src="../partner-assets/js/add-section.js"></script>
 </body>
 
 </html>
