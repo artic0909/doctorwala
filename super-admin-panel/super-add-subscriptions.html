@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>All Doctors Details</title>
+    <title>Add Subscription</title>
 
     <!-- plugins:css -->
     <link rel="stylesheet" href="../partner-assets">
@@ -41,20 +41,15 @@
         <!-- partial:partials/_navbar.html -->
         <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                <a class="navbar-brand brand-logo mr-5" href="../super-admin-panel/super-dashboard.html" style="font-weight: 900;"><img
-                        src="../img/logo3.png" alt="logo"></a>
-                <a class="navbar-brand brand-logo-mini" href="../super-admin-panel/super-dashboard.html"><img src="../img/fav5.png"
-                        alt="logo" /></a>
+                <a class="navbar-brand brand-logo mr-5" href="../super-admin-panel/super-dashboard.html"
+                    style="font-weight: 900;"><img src="../img/logo3.png" alt="logo"></a>
+                <a class="navbar-brand brand-logo-mini" href="../super-admin-panel/super-dashboard.html"><img
+                        src="../img/fav5.png" alt="logo" /></a>
             </div>
-            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                 <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-
-
-                <input type="search" id="search" placeholder="Search Here ........" name="search"
-                    class="form-control mx-4 w-100">
-
 
                 <ul class="navbar-nav navbar-nav-right">
 
@@ -362,100 +357,101 @@
                             <div class="row">
                                 <div class="col-12">
 
-                                    <div class="row">
-                                        <div class="col-3">
-                                            <h3 class="font-weight-bold">All Doctors Details</h3>
-                                        </div>
-
-                                        <div class="col-9 d-flex justify-content-end align-items-center">
-                                            <nav aria-label="Page navigation">
-                                                <ul class="pagination">
-                                                    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                    </div>
+                                    <h3 class="font-weight-bold">Add Subscription</h3>
 
 
 
-                                    <table class="table table-stripped table-bordered mt-4">
-                                        <thead>
-                                            <tr>
-                                                <th>SL.</th>
-                                                <th>Date</th>
-                                                <th>Subscription Date</th>
-                                                <th>Clinic Name</th>
-                                                <th>Name|Email|Mobile</th>
-                                                <th>Address</th>
-                                                <th>State|City</th>
-                                                <th>Status</th>
-                                                <th>Actions</th>
-                                            </tr>
-                                        </thead>
-
-                                        <tbody>
+                                    <form class="prof-view">
 
 
-                                            <tr>
-
-                                                <td>1</td>
-                                                <td>29-11-2024</td>
-                                                <td>29-11-2024</td>
-
-                                                <td>Life LIne</td>
-
-                                                <td>
-                                                    <p class="m-0">Saklin Mustak</p>
-                                                    <p class="m-0">sm@gmail.com</p>
-                                                    <p class="m-0">+91 8985458848</p>
-                                                </td>
-
-                                                <td>Ranihati, Howrah, 711302</td>
-
-                                                <td>
-                                                    <p class="m-0">West Bengal</p>
-                                                    <p class="m-0">Ranihati</p>
-                                                </td>
-
-
-                                                <td><a href="" data-target="#myActiveInactiveModal" data-toggle="modal"
-                                                        class="ed-btn"><i class="fa-solid fa-toggle-off text-success"
-                                                            style="font-size: 1.1rem;"></i></a></td>
+                                        <div class="from-view row  mt-3">
 
 
 
-                                                <td>
 
-                                                    <div class="actions d-flex flex-wrap">
-                                                        <a href="" data-target="#myDeleteModal" data-toggle="modal"
-                                                            class="ed-btn ml-3">
-                                                            <i class="fa-solid fa-trash-can text-danger"
-                                                                style="font-size: 1rem;"></i>
-                                                        </a>
+                                            <div class="col-6 form-group">
+                                                <label for="name" style="font-weight: 700;"><i
+                                                        class="fa-solid fa-gifts text-primary" aria-hidden="true"></i>
+                                                    Subscription Text
+                                                    <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                    style="height: 55px;">
+                                            </div>
 
 
-                                                        <a href="../super-admin-panel/super-edit-doctors-details.html"
-                                                            class="ed-btn ml-3">
-                                                            <i class="fa-solid fa-pen-to-square text-primaryy"
-                                                                style="font-size: 1rem;"></i>
-                                                        </a>
+
+
+
+
+
+                                            <div class="col-6 form-group">
+                                                <label for="name" style="font-weight: 700;"><i
+                                                        class="fa fa-indian-rupee text-primary" aria-hidden="true"></i>
+                                                    Subscription Amount <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control" id="name" name="name"
+                                                    style="height: 55px;">
+                                            </div>
+
+
+
+
+                                            <div class="col-6 form-group">
+                                                <label for="name" style="font-weight: 700;"><i
+                                                        class="fa-solid fa-calendar-days text-primary"></i>
+                                                    Opening Date <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control" id="name" name="name"
+                                                    style="height: 55px;">
+                                            </div>
+
+
+
+                                            <div class="col-6 form-group">
+                                                <label for="name" style="font-weight: 700;"><i
+                                                        class="fa fa-calendar-xmark text-primary"
+                                                        aria-hidden="true"></i> Closing
+                                                    Date
+                                                    <span class="text-danger">*</span></label>
+                                                <input type="date" class="form-control" id="name" name="name"
+                                                    style="height: 55px;">
+                                            </div>
+
+
+
+                                            <!-- multiple -->
+                                            <div id="add-same-section" class="row col-12">
+
+                                                <div class="col-3 form-group">
+                                                    <label for="name" style="font-weight: 700;"><i
+                                                            class="fa-solid fa-circle-check text-primary"></i>
+                                                        Features <span class="text-danger">*</span></label>
+
+                                                    <div class="d-flex align-items-center">
+                                                        <input type="text" class="form-control" style="height: 55px;">
+
+                                                        <button type="button" id="add-section-button"
+                                                            class="btn btn-primary rounded col-3 ml-3"
+                                                            style="height: 55px; font-weight: 700;">ADD</button>
                                                     </div>
 
-                                                </td>
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="d-flex justify-content-center w-100">
+                                                <button type="submit" class="btn btn-danger rounded"
+                                                    style="font-weight: 700;">Add Subscription</button>
+                                            </div>
 
 
 
 
+                                        </div>
 
 
 
-
-                                        </tbody>
-                                    </table>
+                                    </form>
 
 
                                 </div>
@@ -468,108 +464,6 @@
 
 
                 </div>
-
-
-
-
-
-
-                <!-- Delete Modal -->
-                <div class="modal fade" id="myDeleteModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myDeleteModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-
-                            <form action="" class="modal-body">
-                                <div class="form-group d-flex flex-column align-items-center">
-                                    <i class="fa-solid fa-trash-can fa-2x text-danger"></i>
-
-                                    <h3 class="mt-3">Are You Sure ?</h3>
-
-                                    <p class="mt-2 text-center">Do you really want to delete these record? This Process
-                                        cannot be undone.</p>
-
-                                    <div class="btnss d-flex justify-content-around align-items-center w-100 mt-3">
-                                        <button type="button" class="btn btn-primary rounded w-50 mr-3"
-                                            data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-danger rounded w-50">Confirm</button>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <!-- Pass Modal -->
-                <div class="modal fade" id="myPassModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myDeleteModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-
-                            <form action="" class="modal-body">
-                                <div class="form-group d-flex flex-column align-items-center">
-                                    <i class="fa-solid fa-user-secret fa-3x text-danger"></i>
-
-                                    <h3 class="mt-3">It's Me user name !</h3>
-
-                                    <p class="mt-2 text-center" style="font-weight: 700;">⚠️Highly restricted to share
-                                        PassKeys*** to anyone⚠️</p>
-
-                                    <p class="m-0"><strong>Email ID: sm@gmail.com</strong></p>
-
-                                    <p class="m-0"><strong>Passkey: Qr3$-vjDW-UserPass-DW0-0&#</strong></p>
-
-                                    <div class="btnss d-flex justify-content-around align-items-center w-100 mt-3">
-                                        <button type="button" class="btn btn-primary rounded w-50 mr-3"
-                                            data-dismiss="modal">Cancel</button>
-                                        <button type="button" class="btn btn-danger rounded w-50"
-                                            data-dismiss="modal">Confirm</button>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- My Active Inactive  Modal -->
-                <div class="modal fade" id="myActiveInactiveModal" tabindex="-1" role="dialog"
-                    aria-labelledby="myActiveInactiveModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-
-
-
-                            <form class="modal-body">
-
-
-
-                                <div class="form-group">
-                                    <label for="other_banner"><i class="fa fa-stethoscope text-success"
-                                            aria-hidden="true"></i>
-                                        Set Status <span class="text-danger">*</span></label>
-                                    <select name="" id="" class="form-control">
-                                        <option value="" selected>Inactive</option>
-                                        <option value="">Active</option>
-                                    </select>
-                                </div>
-
-
-
-                                <button type="submit" class="btn btn-success rounded w-100">Submit</button>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-
-
 
 
 
@@ -642,6 +536,12 @@
     <script src="../partner-assets/js/dashboard.js"></script>
     <script src="../partner-assets/js/Chart.roundedBarCharts.js"></script>
     <!-- End custom js for this page-->
+
+
+
+
+    <!-- add section JS -->
+    <script src="../js/add-features.js"></script>
 </body>
 
 </html>
